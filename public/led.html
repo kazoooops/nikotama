@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LED Cubes</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #000;
+      color: #fff;
+    }
+    canvas {
+      display: block;
+    }
+    #status {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 999999;
+      max-width: calc(100vw - 40px);
+      padding: 10px;
+      background: #222;
+      color: #fff;
+      font: 14px monospace;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+  </style>
+</head>
+<body>
+  <div id="status">読み込み中…</div>
+  <script type="module" src="/led-preview.js"></script>
+</body>
+</html>
